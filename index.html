@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-      <title>Example</title>
+      <title>File Uploader</title>
       <meta name="viewport" content="width=device-width, initial-scale=1">
 
       <!-- Do not add `link` tags-->
@@ -12,6 +12,29 @@
       <script src="public/application.js" type="text/javascript" charset="utf-8" defer></script>
     </head>
     <body>
-      <h1>Browser Template</h1>
+      <h1>File Uploader</h1>
+      <div id="feedback"></div>
+
+      <div>
+        <div class="row">
+          <div class="col-3">
+            <div class="input-group">
+              <div class="input-group-prepend">
+                <button type="submit" class="input-group-text" id="inputGroupFileAddon01">Upload</button>
+              </div>
+              <div class="custom-file">
+                <input type="file" class="custom-file-input" id="inputGroupFile01"
+                aria-describedby="inputGroupFileAddon01">
+                <label class="custom-file-label" for="inputGroupFile01">Choose file</label>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-9">
+            Image
+          </div>
+        </div>
+      </div>
+
     </body>
 </html>
