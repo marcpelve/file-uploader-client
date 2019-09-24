@@ -1,40 +1,39 @@
 <!DOCTYPE html>
 <html>
-    <head>
-      <title>File Uploader</title>
-      <meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+  <title>File Uploader</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-      <!-- Do not add `link` tags-->
-      <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+  <!-- Do not add `link` tags-->
+  <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
 
-      <!-- Do not add `script` tags-->
-      <script src="public/vendor.js" type="text/javascript" charset="utf-8" defer></script>
-      <script src="public/application.js" type="text/javascript" charset="utf-8" defer></script>
-    </head>
-    <body>
-      <h1>File Uploader</h1>
-      <div id="feedback"></div>
+  <!-- Do not add `script` tags-->
+  <script src="public/vendor.js" type="text/javascript" charset="utf-8" defer></script>
+  <script src="public/application.js" type="text/javascript" charset="utf-8" defer></script>
+</head>
+<body>
+  <h1>File Uploader</h1>
+  <div id="feedback"></div>
 
-      <div>
-        <div class="row">
-          <div class="col-3">
-            <div class="input-group">
-              <div class="input-group-prepend">
-                <button type="submit" class="input-group-text" id="inputGroupFileAddon01">Upload</button>
-              </div>
-              <div class="custom-file">
-                <input type="file" class="custom-file-input" id="inputGroupFile01"
-                aria-describedby="inputGroupFileAddon01">
-                <label class="custom-file-label" for="inputGroupFile01">Choose file</label>
-              </div>
-            </div>
+  <div>
+    <div class="row">
+      <div class="col-3">
+
+        <form id="upload-form">
+          <div class="form-group">
+            <label for="upload-file">Select File</label>
+            <input type="file" name="file" class="form-control-file" id="select-file">
+            <input type="submit" value="Upload">
           </div>
-
-          <div class="col-9">
-            Image
-          </div>
-        </div>
+        </form>
       </div>
 
-    </body>
+      <div id="preview" class="col-9">
+        <div class="display" />
+        <img id="image-target" src="#" alt='Preview'>
+      </div>
+    </div>
+  </div>
+
+</body>
 </html>

@@ -5,7 +5,9 @@
 
 // use require without a reference to ensure a file is bundled
 // require('./example')
+const uploadEvents = require('./upload/events')
 
 $(() => {
-  // your JS code goes here
+  $('#select-file').change(uploadEvents.putImage)
+  $('#upload-form').on('submit', uploadEvents.onCreateUpload)
 })
